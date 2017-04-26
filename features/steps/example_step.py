@@ -1,4 +1,5 @@
 from behave import *
+from pages.search import Search
 
 @given('we have behave installed')
 def step_impl(context):
@@ -10,4 +11,4 @@ def step_impl(context):
 
 @then('behave will test it for us!')
 def step_impl(context):
-    pass
+    self.fail('ERROW')
