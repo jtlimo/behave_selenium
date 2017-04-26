@@ -1,3 +1,3 @@
 FROM python:3-onbuild
-COPY teste.sh /usr/bin/teste.sh
-CMD [ "teste.sh" ]
+COPY setup.sh /usr/bin/setup.sh
+CMD [ "setup.sh" ]

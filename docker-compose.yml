@@ -13,4 +13,4 @@ services:
     working_dir: /app
     links:
       - selenium_server
-    command: behave features/
+    #command: behave features/
