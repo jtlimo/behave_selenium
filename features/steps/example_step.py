@@ -11,4 +11,4 @@ def step_impl(context):
 
 @then('behave will test it for us!')
 def step_impl(context):
-    self.fail('ERROW')
+    context.fail('ERROW')
