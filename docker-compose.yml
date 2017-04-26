@@ -14,3 +14,4 @@ services:
     links:
       - selenium_server
     command: behave features/
+    command: sh listener_exit_code.sh
