@@ -1,0 +1,16 @@
+version: '2'
+services:
+  selenium_server:
+    image: "selenium/standalone-chrome"
+    ports:
+      - "4444:4444"
+    volumes:
+      - /dev/shm:/dev/shm
+  application:
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    links:
+      - selenium_server
+    command: behave features/
