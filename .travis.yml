@@ -16,7 +16,7 @@ before_install:
   - docker-compose --version
 
 script:
-  - docker-compose up
+  - docker-compose up --abort-on-container-exit
 
 after_script:
   - docker-compose down
