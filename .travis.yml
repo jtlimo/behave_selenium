@@ -15,8 +15,11 @@ before_install:
   - sudo mv docker-compose /usr/local/bin
   - docker-compose --version
 
-script:
+before_script:
   - docker-compose up --abort-on-container-exit
+
+script:
+  - sh listener_exit_code.sh
 
 after_script:
   - docker-compose down
