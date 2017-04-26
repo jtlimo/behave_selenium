@@ -19,7 +19,7 @@ before_script:
   - docker-compose up --abort-on-container-exit
 
 script:
-  - sh listener_exit_code.sh
+  - sh listener_exit_code
 
 after_script:
   - docker-compose down
