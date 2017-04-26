@@ -1,5 +1,5 @@
 from behave import *
-from pages.search import Search
+#from pages.search import Search
 
 @given('we have behave installed')
 def step_impl(context):
